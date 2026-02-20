@@ -4,59 +4,114 @@
 <meta charset="UTF-8">
 <title>Tokyo R&D</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Tokyo R&D is a strategic research and innovation brand operated by Researching Plus, bridging Europe and Japan.">
+<meta name="description" content="Tokyo R&D is a strategic research initiative operated by Researching Plus, bridging Europe and Japan.">
+
 <style>
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  margin: 0;
-  background:#ffffff;
+  margin:0;
+  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   color:#111;
   line-height:1.6;
+  background:#fff;
 }
-header {
-  padding:80px 20px;
+
+.hero {
+  position:relative;
+  height:85vh;
+  background-image:url("https://images.unsplash.com/photo-1505060892248-7b5d27f8b0c0?q=80&w=2000&auto=format&fit=crop");
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
   text-align:center;
-  border-bottom:1px solid #eee;
+  color:#fff;
 }
+
+.hero::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.55);
+}
+
+.hero-content {
+  position:relative;
+  z-index:2;
+  max-width:800px;
+  padding:20px;
+}
+
+.hero h1 {
+  font-size:42px;
+  margin-bottom:15px;
+  letter-spacing:1px;
+}
+
+.hero p {
+  font-size:20px;
+  opacity:0.9;
+}
+
 section {
-  max-width:820px;
-  margin:70px auto;
+  max-width:900px;
+  margin:80px auto;
   padding:0 20px;
 }
-h1 { font-size:34px; margin-bottom:10px; }
-h2 { font-size:22px; margin-bottom:15px; }
+
+h2 {
+  font-size:24px;
+  margin-bottom:20px;
+}
+
+ul {
+  padding-left:20px;
+}
+
+.contact-box {
+  background:#f4f4f4;
+  padding:30px;
+  border-radius:10px;
+}
+
 footer {
   border-top:1px solid #eee;
   padding:40px 20px;
   font-size:14px;
-  color:#666;
   text-align:center;
+  color:#666;
 }
-a { color:#000; text-decoration:none; }
-a:hover { text-decoration:underline; }
-.contact {
-  background:#f5f5f5;
-  padding:25px;
-  border-radius:8px;
+
+a {
+  color:#000;
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+@media (max-width:768px){
+  .hero h1 { font-size:28px; }
+  .hero p { font-size:16px; }
 }
 </style>
 </head>
+
 <body>
 
-<header>
-<h1>Tokyo R&D</h1>
-<p>Bridging Europe and Japan Through Research & Strategy</p>
-</header>
+<div class="hero">
+  <div class="hero-content">
+    <h1>Tokyo R&D</h1>
+    <p>Strategic Research & Market Intelligence<br>Bridging Europe and Japan</p>
+  </div>
+</div>
 
 <section>
 <h2>About</h2>
 <p>
-Tokyo R&D is a strategic research and innovation initiative operated by 
-<strong>Researching Plus</strong>, a UK/EU-based advisory and research firm.
-</p>
-<p>
-We support cross-border expansion, product validation, and innovation partnerships 
-between European and Japanese markets.
+Tokyo R&D is a strategic research initiative operated by <strong>Researching Plus</strong>, a UK/EU-based advisory firm.
+We enable cross-border innovation, market validation, and strategic expansion between European and Japanese markets.
 </p>
 </section>
 
@@ -65,24 +120,22 @@ between European and Japanese markets.
 <ul>
 <li>EU ↔ Japan Market Entry Strategy</li>
 <li>Product & Concept Validation</li>
-<li>Strategic Research & Competitive Intelligence</li>
-<li>Innovation & Partnership Development</li>
+<li>Competitive Intelligence & Strategic Research</li>
+<li>Innovation Partnerships</li>
 </ul>
 </section>
 
 <section>
 <h2>Operated By</h2>
 <p><strong>Researching Plus</strong></p>
-<p>United Kingdom / European Union</p>
 <p>Email: info@researchingplus.com</p>
 <p>Phone: +49 160 9039 5172</p>
 </section>
 
 <section>
 <h2>Contact</h2>
-<div class="contact">
+<div class="contact-box">
 <p>Email: info@tokyorandd.com</p>
-<p>For partnership or research inquiries, please contact us by email.</p>
 </div>
 </section>
 
